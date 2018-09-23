@@ -1,194 +1,675 @@
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:5
-Value in 005 is 05. (Cache Miss)
+========================================================================
+                            Clock Cycle 1
+========================================================================
+IF/ID Write Stage: (sb, $2, 0($8))
+------------------------------------------------------------------------
+Instruction = 0xA1020000    IncrPC = 7A004
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:6
-Value in 006 is 06. (Cache Hit)
+IF/ID Read Stage: No Instruction
+------------------------------------------------------------------------
+Instruction = 0x00000000    IncrPC = 00000
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:7
-Value in 007 is 07. (Cache Hit)
+ID/EX Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 0,   ALUOp = 0,   MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: IncrPC = 00000,      ReadReg1Value = 000, ReadReg2Value = 000
+       SEOffset = 00000000, WriteReg_20_16 = 0,  WriteReg_15_11 = 0
+       Function = 00
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:14c
-Value in 14C is 4C. (Cache Miss)
+ID/EX Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 0, ALUOp = 0,    MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: IncrPC = 00000,       ReadReg1Value = 000, ReadReg2Value = 000
+       SEOffset = 00000000,  WriteReg_20_16 = 0,  WriteReg_15_11 = 0
+       Function = 00
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:14d
-Value in 14D is 4D. (Cache Hit)
+EX/MEM Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, SWValue = 000, WriteRegNum = 0
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:14e
-Value in 14E is 4E. (Cache Hit)
+EX/MEM Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, SWValue = 000, WriteRegNum = 0
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:14f
-Value in 14F is 4F. (Cache Hit)
+MEM/WB Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, LWValue = 00, WriteRegNum = 0
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:150
-Value in 150 is 50. (Cache Miss)
+MEM/WB Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, LWValue = 00, WriteRegNum = 0
+------------------------------------------------------------------------
+Instruction Result: No Instruction
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 103 $04 = 104 $05 = 105 $06 = 106 
+$07 = 107 $08 = 108 $09 = 109 $10 = 10A $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 2
+========================================================================
+IF/ID Write Stage: (lb, $10, -4($8))
+------------------------------------------------------------------------
+Instruction = 0x810AFFFC    IncrPC = 7A008
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:151
-Value in 151 is 51. (Cache Hit)
+IF/ID Read Stage: (sb, $2, 0($8))
+------------------------------------------------------------------------
+Instruction = 0xA1020000    IncrPC = 7A004
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:3a6
-Value in 3A6 is A6. (Cache Miss)
+ID/EX Write Stage: (sb, $2, 0($8))
+------------------------------------------------------------------------
+Control: RegDst = x,   ALUSrc = 1,   ALUOp = 0,   MemRead = 0
+         MemWrite = 1, MemToReg = x, RegWrite = 0
+Value: IncrPC = 7A004,      ReadReg1Value = 108, ReadReg2Value = 102
+       SEOffset = 00000000, WriteReg_20_16 = 2,  WriteReg_15_11 = 0
+       Function = 00
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:4c3
-Value in 4C3 is C3. (Cache Miss)
+ID/EX Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 0, ALUOp = 0,    MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: IncrPC = 00000,       ReadReg1Value = 000, ReadReg2Value = 000
+       SEOffset = 00000000,  WriteReg_20_16 = 0,  WriteReg_15_11 = 0
+       Function = 00
 
-(R)ead,(W)rite, or (D)isplay Cache?
-D
-===================================================================
-  Slot Valid Tag                     Data
-===================================================================
-    0    1    0    00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
-    1    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    2    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    3    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    4    1    1    40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
-    5    1    1    50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
-    6    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    7    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    8    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    9    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    A    1    3    A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
-    B    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    C    1    4    C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
-    D    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    E    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    F    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-===================================================================
-(R)ead,(W)rite, or (D)isplay Cache?
-W
-Please enter the adress:14c
-Please enter the Value:99
-Current value in 14C is 4C. (Cache Hit)
-Value 099 has been written to address 14C
+EX/MEM Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, SWValue = 000, WriteRegNum = 0
 
-(R)ead,(W)rite, or (D)isplay Cache?
-W
-Please enter the adress:63b
-Please enter the Value:7
-Current value in 63B is 3B. (Cache Miss)
-Value 007 has been written to address 63B
+EX/MEM Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, SWValue = 000, WriteRegNum = 0
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:582
-Value in 582 is 82. (Cache Miss)
+MEM/WB Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, LWValue = 00, WriteRegNum = 0
 
-(R)ead,(W)rite, or (D)isplay Cache?
-D
-===================================================================
-  Slot Valid Tag                     Data
-===================================================================
-    0    1    0    00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
-    1    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    2    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    3    1    6    30 31 32 33 34 35 36 37 38 39 3A 07 3C 3D 3E 3F
-    4    1    1    40 41 42 43 44 45 46 47 48 49 4A 4B 99 4D 4E 4F
-    5    1    1    50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
-    6    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    7    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    8    1    5    80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
-    9    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    A    1    3    A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
-    B    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    C    1    4    C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
-    D    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    E    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    F    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-===================================================================
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:348
-Value in 348 is 48. (Cache Miss)
+MEM/WB Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, LWValue = 00, WriteRegNum = 0
+------------------------------------------------------------------------
+Instruction Result: No Instruction
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 103 $04 = 104 $05 = 105 $06 = 106 
+$07 = 107 $08 = 108 $09 = 109 $10 = 10A $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 3
+========================================================================
+IF/ID Write Stage: (add, $3, $4, $3)
+------------------------------------------------------------------------
+Instruction = 0x00831820    IncrPC = 7A00C
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:3f
-Value in 03F is 3F. (Cache Miss)
+IF/ID Read Stage: (lb, $10, -4($8))
+------------------------------------------------------------------------
+Instruction = 0x810AFFFC    IncrPC = 7A008
 
-(R)ead,(W)rite, or (D)isplay Cache?
-D
-===================================================================
-  Slot Valid Tag                     Data
-===================================================================
-    0    1    0    00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
-    1    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    2    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    3    1    0    30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
-    4    1    3    40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
-    5    1    1    50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
-    6    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    7    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    8    1    5    80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
-    9    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    A    1    3    A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
-    B    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    C    1    4    C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
-    D    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    E    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    F    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-===================================================================
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:14b
-Value in 14B is 4B. (Cache Miss)
+ID/EX Write Stage: (lb, $10, -4($8))
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 1,   ALUOp = 0,   MemRead = 1
+         MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: IncrPC = 7A008,      ReadReg1Value = 108, ReadReg2Value = 10A
+       SEOffset = FFFFFFFC, WriteReg_20_16 = 10,  WriteReg_15_11 = 31
+       Function = 3C
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:14c
-Value in 14C is 99. (Cache Hit)
+ID/EX Read Stage: (sb, $2, 0($8))
+------------------------------------------------------------------------
+Control: RegDst = x,   ALUSrc = 1, ALUOp = 0,    MemRead = 0
+         MemWrite = 1, MemToReg = x, RegWrite = 0
+Value: IncrPC = 7A004,       ReadReg1Value = 108, ReadReg2Value = 102
+       SEOffset = 00000000,  WriteReg_20_16 = 2,  WriteReg_15_11 = 0
+       Function = 00
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:63f
-Value in 63F is 3F. (Cache Miss)
+EX/MEM Write Stage: (sb, $2, 0($8))
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 1, MemToReg = x, RegWrite = 0
+Value: ALUResult = 108, SWValue = 102, WriteRegNum = 2
 
-(R)ead,(W)rite, or (D)isplay Cache?
-R
-Please enter the adress:83
-Value in 083 is 83. (Cache Miss)
+EX/MEM Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, SWValue = 000, WriteRegNum = 0
 
-(R)ead,(W)rite, or (D)isplay Cache?
-D
-===================================================================
-  Slot Valid Tag                     Data
-===================================================================
-    0    1    0    00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
-    1    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    2    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    3    1    6    30 31 32 33 34 35 36 37 38 39 3A 07 3C 3D 3E 3F
-    4    1    1    40 41 42 43 44 45 46 47 48 49 4A 4B 99 4D 4E 4F
-    5    1    1    50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
-    6    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    7    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    8    1    0    80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
-    9    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    A    1    3    A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
-    B    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    C    1    4    C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
-    D    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    E    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-    F    0    0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-===================================================================
-(R)ead,(W)rite, or (D)isplay Cache?
-E
+MEM/WB Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, LWValue = 00, WriteRegNum = 0
+
+MEM/WB Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, LWValue = 00, WriteRegNum = 0
+------------------------------------------------------------------------
+Instruction Result: No Instruction
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 103 $04 = 104 $05 = 105 $06 = 106 
+$07 = 107 $08 = 108 $09 = 109 $10 = 10A $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 4
+========================================================================
+IF/ID Write Stage: (add, $7, $9, $6)
+------------------------------------------------------------------------
+Instruction = 0x01263820    IncrPC = 7A010
+
+IF/ID Read Stage: (add, $3, $4, $3)
+------------------------------------------------------------------------
+Instruction = 0x00831820    IncrPC = 7A00C
+
+ID/EX Write Stage: (add, $3, $4, $3)
+------------------------------------------------------------------------
+Control: RegDst = 1,   ALUSrc = 0,   ALUOp = 10,   MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: IncrPC = 7A00C,      ReadReg1Value = 104, ReadReg2Value = 103
+       SEOffset = 00001820, WriteReg_20_16 = 3,  WriteReg_15_11 = 3
+       Function = 20
+
+ID/EX Read Stage: (lb, $10, -4($8))
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 1, ALUOp = 0,    MemRead = 1
+         MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: IncrPC = 7A008,       ReadReg1Value = 108, ReadReg2Value = 10A
+       SEOffset = FFFFFFFC,  WriteReg_20_16 = 10,  WriteReg_15_11 = 31
+       Function = 3C
+
+EX/MEM Write Stage: (lb, $10, -4($8))
+------------------------------------------------------------------------
+Control: MemRead = 1, MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: ALUResult = 104, SWValue = 10A, WriteRegNum = 10
+
+EX/MEM Read Stage: (sb, $2, 0($8))
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 1, MemToReg = x, RegWrite = 0
+Value: ALUResult = 108, SWValue = 102, WriteRegNum = 2
+
+MEM/WB Write Stage: (sb, $2, 0($8))
+------------------------------------------------------------------------
+Control: MemToReg = x, RegWrite = 0
+Value: ALUResult = 108, LWValue = 08, WriteRegNum = 2
+
+MEM/WB Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, LWValue = 00, WriteRegNum = 0
+------------------------------------------------------------------------
+Instruction Result: No Instruction
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 103 $04 = 104 $05 = 105 $06 = 106 
+$07 = 107 $08 = 108 $09 = 109 $10 = 10A $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 5
+========================================================================
+IF/ID Write Stage: (add, $9, $9, $2)
+------------------------------------------------------------------------
+Instruction = 0x01224820    IncrPC = 7A014
+
+IF/ID Read Stage: (add, $7, $9, $6)
+------------------------------------------------------------------------
+Instruction = 0x01263820    IncrPC = 7A010
+
+ID/EX Write Stage: (add, $7, $9, $6)
+------------------------------------------------------------------------
+Control: RegDst = 1,   ALUSrc = 0,   ALUOp = 10,   MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: IncrPC = 7A010,      ReadReg1Value = 109, ReadReg2Value = 106
+       SEOffset = 00003820, WriteReg_20_16 = 6,  WriteReg_15_11 = 7
+       Function = 20
+
+ID/EX Read Stage: (add, $3, $4, $3)
+------------------------------------------------------------------------
+Control: RegDst = 1,   ALUSrc = 0, ALUOp = 10,    MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: IncrPC = 7A00C,       ReadReg1Value = 104, ReadReg2Value = 103
+       SEOffset = 00001820,  WriteReg_20_16 = 3,  WriteReg_15_11 = 3
+       Function = 20
+
+EX/MEM Write Stage: (add, $3, $4, $3)
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: ALUResult = 207, SWValue = 103, WriteRegNum = 3
+
+EX/MEM Read Stage: (lb, $10, -4($8))
+------------------------------------------------------------------------
+Control: MemRead = 1, MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: ALUResult = 104, SWValue = 10A, WriteRegNum = 10
+
+MEM/WB Write Stage: (lb, $10, -4($8))
+------------------------------------------------------------------------
+Control: MemToReg = 1, RegWrite = 1
+Value: ALUResult = 104, LWValue = 04, WriteRegNum = 10
+
+MEM/WB Read Stage: (sb, $2, 0($8))
+------------------------------------------------------------------------
+Control: MemToReg = x, RegWrite = 0
+Value: ALUResult = 108, LWValue = 08, WriteRegNum = 2
+------------------------------------------------------------------------
+Instruction Result: Store Byte has No register written
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 103 $04 = 104 $05 = 105 $06 = 106 
+$07 = 107 $08 = 108 $09 = 109 $10 = 10A $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 6
+========================================================================
+IF/ID Write Stage: (lb, $24, 0($8))
+------------------------------------------------------------------------
+Instruction = 0x81180000    IncrPC = 7A018
+
+IF/ID Read Stage: (add, $9, $9, $2)
+------------------------------------------------------------------------
+Instruction = 0x01224820    IncrPC = 7A014
+
+ID/EX Write Stage: (add, $9, $9, $2)
+------------------------------------------------------------------------
+Control: RegDst = 1,   ALUSrc = 0,   ALUOp = 10,   MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: IncrPC = 7A014,      ReadReg1Value = 109, ReadReg2Value = 102
+       SEOffset = 00004820, WriteReg_20_16 = 2,  WriteReg_15_11 = 9
+       Function = 20
+
+ID/EX Read Stage: (add, $7, $9, $6)
+------------------------------------------------------------------------
+Control: RegDst = 1,   ALUSrc = 0, ALUOp = 10,    MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: IncrPC = 7A010,       ReadReg1Value = 109, ReadReg2Value = 106
+       SEOffset = 00003820,  WriteReg_20_16 = 6,  WriteReg_15_11 = 7
+       Function = 20
+
+EX/MEM Write Stage: (add, $7, $9, $6)
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: ALUResult = 20F, SWValue = 106, WriteRegNum = 7
+
+EX/MEM Read Stage: (add, $3, $4, $3)
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: ALUResult = 207, SWValue = 103, WriteRegNum = 3
+
+MEM/WB Write Stage: (add, $3, $4, $3)
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 1
+Value: ALUResult = 207, LWValue = 07, WriteRegNum = 3
+
+MEM/WB Read Stage: (lb, $10, -4($8))
+------------------------------------------------------------------------
+Control: MemToReg = 1, RegWrite = 1
+Value: ALUResult = 104, LWValue = 04, WriteRegNum = 10
+------------------------------------------------------------------------
+Instruction Result: $10 is set to a new value of 04 from Memory address 
+                    of 104
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 103 $04 = 104 $05 = 105 $06 = 106 
+$07 = 107 $08 = 108 $09 = 109 $10 = 004 $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 7
+========================================================================
+IF/ID Write Stage: (lb, $17, 16($10))
+------------------------------------------------------------------------
+Instruction = 0x81510010    IncrPC = 7A01C
+
+IF/ID Read Stage: (lb, $24, 0($8))
+------------------------------------------------------------------------
+Instruction = 0x81180000    IncrPC = 7A018
+
+ID/EX Write Stage: (lb, $24, 0($8))
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 1,   ALUOp = 0,   MemRead = 1
+         MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: IncrPC = 7A018,      ReadReg1Value = 108, ReadReg2Value = 118
+       SEOffset = 00000000, WriteReg_20_16 = 24,  WriteReg_15_11 = 0
+       Function = 00
+
+ID/EX Read Stage: (add, $9, $9, $2)
+------------------------------------------------------------------------
+Control: RegDst = 1,   ALUSrc = 0, ALUOp = 10,    MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: IncrPC = 7A014,       ReadReg1Value = 109, ReadReg2Value = 102
+       SEOffset = 00004820,  WriteReg_20_16 = 2,  WriteReg_15_11 = 9
+       Function = 20
+
+EX/MEM Write Stage: (add, $9, $9, $2)
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: ALUResult = 20B, SWValue = 102, WriteRegNum = 9
+
+EX/MEM Read Stage: (add, $7, $9, $6)
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: ALUResult = 20F, SWValue = 106, WriteRegNum = 7
+
+MEM/WB Write Stage: (add, $7, $9, $6)
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 1
+Value: ALUResult = 20F, LWValue = 0F, WriteRegNum = 7
+
+MEM/WB Read Stage: (add, $3, $4, $3)
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 1
+Value: ALUResult = 207, LWValue = 07, WriteRegNum = 3
+------------------------------------------------------------------------
+Instruction Result: $3 is set to a new value of 207
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 207 $04 = 104 $05 = 105 $06 = 106 
+$07 = 107 $08 = 108 $09 = 109 $10 = 004 $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 8
+========================================================================
+IF/ID Write Stage: (sub, $8, $3, $2)
+------------------------------------------------------------------------
+Instruction = 0x00624022    IncrPC = 7A020
+
+IF/ID Read Stage: (lb, $17, 16($10))
+------------------------------------------------------------------------
+Instruction = 0x81510010    IncrPC = 7A01C
+
+ID/EX Write Stage: (lb, $17, 16($10))
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 1,   ALUOp = 0,   MemRead = 1
+         MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: IncrPC = 7A01C,      ReadReg1Value = 004, ReadReg2Value = 111
+       SEOffset = 00000010, WriteReg_20_16 = 17,  WriteReg_15_11 = 0
+       Function = 10
+
+ID/EX Read Stage: (lb, $24, 0($8))
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 1, ALUOp = 0,    MemRead = 1
+         MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: IncrPC = 7A018,       ReadReg1Value = 108, ReadReg2Value = 118
+       SEOffset = 00000000,  WriteReg_20_16 = 24,  WriteReg_15_11 = 0
+       Function = 00
+
+EX/MEM Write Stage: (lb, $24, 0($8))
+------------------------------------------------------------------------
+Control: MemRead = 1, MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: ALUResult = 108, SWValue = 118, WriteRegNum = 24
+
+EX/MEM Read Stage: (add, $9, $9, $2)
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: ALUResult = 20B, SWValue = 102, WriteRegNum = 9
+
+MEM/WB Write Stage: (add, $9, $9, $2)
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 1
+Value: ALUResult = 20B, LWValue = 0B, WriteRegNum = 9
+
+MEM/WB Read Stage: (add, $7, $9, $6)
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 1
+Value: ALUResult = 20F, LWValue = 0F, WriteRegNum = 7
+------------------------------------------------------------------------
+Instruction Result: $7 is set to a new value of 20F
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 207 $04 = 104 $05 = 105 $06 = 106 
+$07 = 20F $08 = 108 $09 = 109 $10 = 004 $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 9
+========================================================================
+IF/ID Write Stage: No Instruction
+------------------------------------------------------------------------
+Instruction = 0x00000000    IncrPC = 7A024
+
+IF/ID Read Stage: (sub, $8, $3, $2)
+------------------------------------------------------------------------
+Instruction = 0x00624022    IncrPC = 7A020
+
+ID/EX Write Stage: (sub, $8, $3, $2)
+------------------------------------------------------------------------
+Control: RegDst = 1,   ALUSrc = 0,   ALUOp = 10,   MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: IncrPC = 7A020,      ReadReg1Value = 207, ReadReg2Value = 102
+       SEOffset = 00004022, WriteReg_20_16 = 2,  WriteReg_15_11 = 8
+       Function = 22
+
+ID/EX Read Stage: (lb, $17, 16($10))
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 1, ALUOp = 0,    MemRead = 1
+         MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: IncrPC = 7A01C,       ReadReg1Value = 004, ReadReg2Value = 111
+       SEOffset = 00000010,  WriteReg_20_16 = 17,  WriteReg_15_11 = 0
+       Function = 10
+
+EX/MEM Write Stage: (lb, $17, 16($10))
+------------------------------------------------------------------------
+Control: MemRead = 1, MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: ALUResult = 014, SWValue = 111, WriteRegNum = 17
+
+EX/MEM Read Stage: (lb, $24, 0($8))
+------------------------------------------------------------------------
+Control: MemRead = 1, MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: ALUResult = 108, SWValue = 118, WriteRegNum = 24
+
+MEM/WB Write Stage: (lb, $24, 0($8))
+------------------------------------------------------------------------
+Control: MemToReg = 1, RegWrite = 1
+Value: ALUResult = 108, LWValue = 102, WriteRegNum = 24
+
+MEM/WB Read Stage: (add, $9, $9, $2)
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 1
+Value: ALUResult = 20B, LWValue = 0B, WriteRegNum = 9
+------------------------------------------------------------------------
+Instruction Result: $9 is set to a new value of 20B
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 207 $04 = 104 $05 = 105 $06 = 106 
+$07 = 20F $08 = 108 $09 = 20B $10 = 004 $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 118 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 10
+========================================================================
+IF/ID Write Stage: No Instruction
+------------------------------------------------------------------------
+Instruction = 0x00000000    IncrPC = 7A028
+
+IF/ID Read Stage: No Instruction
+------------------------------------------------------------------------
+Instruction = 0x00000000    IncrPC = 7A024
+
+ID/EX Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 0,   ALUOp = 0,   MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: IncrPC = 7A024,      ReadReg1Value = 000, ReadReg2Value = 000
+       SEOffset = 00000000, WriteReg_20_16 = 0,  WriteReg_15_11 = 0
+       Function = 00
+
+ID/EX Read Stage: (sub, $8, $3, $2)
+------------------------------------------------------------------------
+Control: RegDst = 1,   ALUSrc = 0, ALUOp = 10,    MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: IncrPC = 7A020,       ReadReg1Value = 207, ReadReg2Value = 102
+       SEOffset = 00004022,  WriteReg_20_16 = 2,  WriteReg_15_11 = 8
+       Function = 22
+
+EX/MEM Write Stage: (sub, $8, $3, $2)
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: ALUResult = 105, SWValue = 102, WriteRegNum = 8
+
+EX/MEM Read Stage: (lb, $17, 16($10))
+------------------------------------------------------------------------
+Control: MemRead = 1, MemWrite = 0, MemToReg = 1, RegWrite = 1
+Value: ALUResult = 014, SWValue = 111, WriteRegNum = 17
+
+MEM/WB Write Stage: (lb, $17, 16($10))
+------------------------------------------------------------------------
+Control: MemToReg = 1, RegWrite = 1
+Value: ALUResult = 014, LWValue = 14, WriteRegNum = 17
+
+MEM/WB Read Stage: (lb, $24, 0($8))
+------------------------------------------------------------------------
+Control: MemToReg = 1, RegWrite = 1
+Value: ALUResult = 108, LWValue = 102, WriteRegNum = 24
+------------------------------------------------------------------------
+Instruction Result: $24 is set to a new value of 102 from Memory address 
+                    of 108
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 207 $04 = 104 $05 = 105 $06 = 106 
+$07 = 20F $08 = 108 $09 = 20B $10 = 004 $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 111 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 102 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 11
+========================================================================
+IF/ID Write Stage: No Instruction
+------------------------------------------------------------------------
+Instruction = 0x00000000    IncrPC = 7A02C
+
+IF/ID Read Stage: No Instruction
+------------------------------------------------------------------------
+Instruction = 0x00000000    IncrPC = 7A028
+
+ID/EX Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 0,   ALUOp = 0,   MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: IncrPC = 7A028,      ReadReg1Value = 000, ReadReg2Value = 000
+       SEOffset = 00000000, WriteReg_20_16 = 0,  WriteReg_15_11 = 0
+       Function = 00
+
+ID/EX Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 0, ALUOp = 0,    MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: IncrPC = 7A024,       ReadReg1Value = 000, ReadReg2Value = 000
+       SEOffset = 00000000,  WriteReg_20_16 = 0,  WriteReg_15_11 = 0
+       Function = 00
+
+EX/MEM Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, SWValue = 000, WriteRegNum = 0
+
+EX/MEM Read Stage: (sub, $8, $3, $2)
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 1
+Value: ALUResult = 105, SWValue = 102, WriteRegNum = 8
+
+MEM/WB Write Stage: (sub, $8, $3, $2)
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 1
+Value: ALUResult = 105, LWValue = 05, WriteRegNum = 8
+
+MEM/WB Read Stage: (lb, $17, 16($10))
+------------------------------------------------------------------------
+Control: MemToReg = 1, RegWrite = 1
+Value: ALUResult = 014, LWValue = 14, WriteRegNum = 17
+------------------------------------------------------------------------
+Instruction Result: $17 is set to a new value of 14 from Memory address 
+                    of 014
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 207 $04 = 104 $05 = 105 $06 = 106 
+$07 = 20F $08 = 108 $09 = 20B $10 = 004 $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 014 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 102 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
+========================================================================
+                            Clock Cycle 12
+========================================================================
+IF/ID Write Stage: No Instruction
+------------------------------------------------------------------------
+Instruction = 0x00000000    IncrPC = 7A030
+
+IF/ID Read Stage: No Instruction
+------------------------------------------------------------------------
+Instruction = 0x00000000    IncrPC = 7A02C
+
+ID/EX Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 0,   ALUOp = 0,   MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: IncrPC = 7A02C,      ReadReg1Value = 000, ReadReg2Value = 000
+       SEOffset = 00000000, WriteReg_20_16 = 0,  WriteReg_15_11 = 0
+       Function = 00
+
+ID/EX Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: RegDst = 0,   ALUSrc = 0, ALUOp = 0,    MemRead = 0
+         MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: IncrPC = 7A028,       ReadReg1Value = 000, ReadReg2Value = 000
+       SEOffset = 00000000,  WriteReg_20_16 = 0,  WriteReg_15_11 = 0
+       Function = 00
+
+EX/MEM Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, SWValue = 000, WriteRegNum = 0
+
+EX/MEM Read Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemRead = 0, MemWrite = 0, MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, SWValue = 000, WriteRegNum = 0
+
+MEM/WB Write Stage: No Instruction
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 0
+Value: ALUResult = 000, LWValue = 00, WriteRegNum = 0
+
+MEM/WB Read Stage: (sub, $8, $3, $2)
+------------------------------------------------------------------------
+Control: MemToReg = 0, RegWrite = 1
+Value: ALUResult = 105, LWValue = 05, WriteRegNum = 8
+------------------------------------------------------------------------
+Instruction Result: $8 is set to a new value of 105
+========================================================================
+                              Registers 
+------------------------------------------------------------------------
+$00 = 000 $01 = 101 $02 = 102 $03 = 207 $04 = 104 $05 = 105 $06 = 106 
+$07 = 20F $08 = 105 $09 = 20B $10 = 004 $11 = 10B $12 = 10C $13 = 10D 
+$14 = 10E $15 = 10F $16 = 110 $17 = 014 $18 = 112 $19 = 113 $20 = 114 
+$21 = 115 $22 = 116 $23 = 117 $24 = 102 $25 = 119 $26 = 11A $27 = 11B 
+$28 = 11C $29 = 11D $30 = 11E $31 = 11F 
